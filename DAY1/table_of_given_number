@@ -1,0 +1,19 @@
+//multiplication table of given number
+import java.util.Scanner;
+//system scanner must be capital
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+
+        System.out.println("enter no ");
+        int num =sc.nextInt();
+
+        for(int i=1;i<=10;i++){
+            System.out.printf("%d X %d = %d \n",num,i,num*i);
+        }
+
+        sc.close();
+       // System.out.println("Start small. Ship something.");
+
+    }
+}
