@@ -1,31 +1,23 @@
- package summer_Assignment_25114FW001.Day_1;
-import java.util.*;
+import java.util.Scanner;
 
-// >>> Write a program to Calculate sum of first N natural numbers
-
-public class Question_1 {
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //loop
+        System.out.println("enter n");
+        int N=sc.nextInt();
 
-        // >> first way is to use loop//
-        System.out.println("Enter the value of N ");
-        int N = sc.nextInt();
+        int sum=1;
 
-        int sum = 1;
-
-        for(int i = 2; i <= N; i++) {
-            sum += i;
+        for(int i=2;i<=N;i++){
+            sum+=i;
         }
+        System.out.println("sum of first n natural no "+sum);
+        //direct formula 
+        System.out.println("the sum of first n1 natural no " +(N*(N+1)/2));
 
-        System.out.println("The sum of first N natural number is " + sum);
+        sc.close();
 
-        // >> second way is to use direct formula 
-        System.out.println("Enter the value of N1 ");
-        int N1 = sc.nextInt();
-
-        System.out.println("The sum of first N1 natual number is " + (N1*(N1+1))/2);
-        
-        // The value of N1 is integer so if even is given then it completely divided by 2
-        // if given number is odd then N1 + 1 term will be even which further divided by 2
+        // System.out.println("Start small. Ship something.");
     }
 }
