@@ -1,0 +1,32 @@
+//Palindrome or not
+// import.java.util.Scanner; 
+import java.util.Scanner;
+
+public class Rajeev{
+    public static void main (String[] args){
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("enter no ");
+        int num=sc.nextInt();
+
+        int revN=0;
+        int checker=num;
+
+        while(num>0){
+            revN=revN*10+num%10;
+            num/=10;
+        }
+
+        if (checker==revN){
+            System.out.println("numb is palindrome ");
+        }
+        else{
+            // system.out.println("not palindrome "); system s capital
+
+            System.out.println("not palindrome ");
+        }
+
+        sc.close();
+
+    }
+}
