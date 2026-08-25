@@ -1,0 +1,21 @@
+//products of digits 
+import java.util.Scanner;
+class Rajeev{
+public static void main(String[] args){ //string ka s capital
+    Scanner sc=new Scanner(System.in);
+
+    System.out.println("enter no ");
+    int num =sc.nextInt();
+
+    int product=1;
+
+    while(num>0){
+        product*=+num%10;
+        num/=10;
+
+    }
+    System.out.println("pdt of digits of no "+ product);
+
+    sc.close();
+}
+}
