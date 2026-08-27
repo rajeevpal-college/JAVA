@@ -1,0 +1,29 @@
+//number is prime or not ??
+
+import java.util.Scanner;
+class papaRajeev {
+    public static void main(String[] args){
+        Scanner sc =new Scanner (System.in);
+
+        System.out.println("entr no");
+        int num =sc.nextInt();
+
+        int count=0;
+
+        for(int i=2;i<=num/2;i++){
+            if(num%i==0){
+            count++;
+            break ;
+        }
+    }
+    
+
+    if (count == 1 || num == 0 || num == 1){
+        System.out.println("entr no is not prime");}
+        else {
+            System.out.println("enter no is prime");
+        }
+        sc.close();
+    }
+       
+    }
