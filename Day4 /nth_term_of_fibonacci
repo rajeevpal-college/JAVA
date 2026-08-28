@@ -1,0 +1,25 @@
+//find fibonnaci terms
+
+import java.util.Scanner;
+
+class justname{
+public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+
+    System.out.println("enter value o n of nth term");
+    int n=sc.nextInt();
+
+    int firstT=0,secondT=1,nextT=0;
+
+    for(int i=3;i<=n;i++){
+        nextT=firstT+secondT;
+        firstT=secondT;
+        secondT=nextT;
+
+    }
+    System.out.println("nth term of fibonacci"+ nextT);
+
+    sc.close(); 
+
+}
+}
