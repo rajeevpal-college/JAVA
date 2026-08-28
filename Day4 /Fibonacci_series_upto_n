@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+//fibonacci series 
+class Main {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner (System.in );
+
+        System.out.println("enter no of terms is F.S. ");
+        int range= sc.nextInt();
+
+        int firstT=0,secondT=1;
+        int nextT;
+        System.out.println(firstT+" ");
+        if (range>1){
+            System.out.print(secondT+" ");
+
+        }
+
+        for(int i=3;i<= range; i++){
+            nextT=firstT+secondT;
+            firstT=secondT;
+            secondT=nextT;
+            System.out.print(nextT +" ");
+        }
+        sc.close();
+    }
+}
