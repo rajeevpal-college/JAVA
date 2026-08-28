@@ -1,0 +1,39 @@
+
+
+//armostrong number
+
+include java.util.Scanner;
+
+class justname{
+    public static void main(String[] args){
+
+        Scanner sc=new Scanner(System.in);//kya krta  h ye 
+
+        System.out.println("enter no");
+        int num =sc.nextInt();
+
+        int checker =num, noofdigit=0;sum=0;
+
+        while (num>0){
+            noofdigit++;
+            num/=10;
+
+        }
+        num=checker;
+
+        while(num>0){
+            sum+=Math.pow(num%,noofdigit);
+            num/=10;
+
+        }
+
+        if (checker==sum){
+            System.out.println("numb is armstrong ");
+
+        }
+        else System.out.println("not a armstrong no ");
+
+        sc.close();
+
+    }
+}
