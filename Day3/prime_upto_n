@@ -1,0 +1,29 @@
+//
+import java.util.Scanner;
+
+class Rajeevjustname{
+    public static void main(String[] args){
+        Scanner  sc=new Scanner (System.in);
+
+        System.out.println("enter value upto which rime no should be printed ");
+        int range=sc.nextInt();
+
+        //0 1 not prime
+        for(int i=2;i<=range;i++){//i=0 nhi
+            int count=0;
+
+            for (int j=02;j<=i/2;j++){//i=0 nho
+                if(i%j==0){
+                    count++;
+                    break;
+
+                }
+            }
+            if (count==0){
+                System.out.print(i+" ");
+
+            }
+        }
+        sc.close();
+    }
+}
