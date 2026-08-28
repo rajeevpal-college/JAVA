@@ -1,0 +1,36 @@
+
+//not check ,print armstrong number upto range
+
+import java.util.Scanner;
+class justname{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("enter the range of armstrong number ");
+        int range=sc.nextInt();
+
+        for(int i=1;i<=range; i++){
+            int nofdigit=0,sum=0,checker=i;
+
+            while (checker>0){
+                nofdigit++;
+                checker /=10;
+
+            }
+            checker=i;
+
+            while(checker>0){
+                sum+=Math.pow(checker%10 , nofdigit);
+                checker/=10;
+            }
+
+            if(i==sum){
+                System.out.print(i +" ");
+            }
+
+            sc.close();
+        }
+    }
+}
+
+
