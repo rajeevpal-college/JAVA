@@ -1,0 +1,43 @@
+
+import java.util.Scanner;
+
+class justname{
+public static void main(String[] args){ //not statics
+    Scanner sc =new Scanner(System.in);
+
+    System.out.println("enter2 no's");
+    int num1 =sc.nextInt();
+    int num2=sc.nextInt();
+    int lcm=1;
+
+    //min no divi by both is lcm
+
+    for(int i=2;num1>1 ||  num2>1;i++){
+        if(num1%i==0&&num2%i==0){
+            lcm*=i;
+            num1/=i;
+            num2/=i;
+            i--;
+        }
+        else if (num1%i==0){
+            lcm*=i;
+            num1/=i;
+            i--;
+        }
+        else if (num2%i==0){
+            lcm*=i;
+            num2/=i;
+            i--;
+        }
+
+    }
+
+    System.out.println("lcm is "+lcm);
+
+    sc.close();
+
+    //other way to use formula after calculating gcd
+    //lcm(a,b)=a*b/gcd(a,b)
+
+}
+}
