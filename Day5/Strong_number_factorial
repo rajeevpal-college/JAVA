@@ -1,0 +1,32 @@
+import java.util.Scanner;
+//strong number 145 =1!+4!+5!=1+24+120=145
+public class Rajeevname{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("enter no ");
+        int num=sc.nextInt(),checker =num,sum=0;
+
+        if(num>0){
+            while(num>0){
+                int fact=1;
+
+                if(num%10!=0){
+                    fact*=num%10;
+                }
+                for (int i=fact-1;i>1;i--){
+                    fact*=i;   
+                }
+                sum+=fact;
+                num/=10;
+            }
+            if(sum==checker){
+                System.out.println("given no is strong");
+            }
+            else{
+                System.out.println("not a strong number");
+            }
+            sc.close();
+    }
+    }
+};
