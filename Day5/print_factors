@@ -1,0 +1,29 @@
+//print factor of number
+
+import java.util.Scanner;
+
+public class justClassKaName {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter no ");
+        int num=sc.nextInt();
+
+        if (num==0){
+            System.out.println("zero have infinte factors ");
+            sc.close();
+            return;
+        }else{
+            if(num<0){num*=-1;}
+            for(int i=1;i<=num/2;i++){
+                if(num%i==0){
+                    System.out.print(i+ "," );
+                }
+            }
+            System.out.print(num + ",");
+            sc.close();
+
+
+         }
+    }
+};
