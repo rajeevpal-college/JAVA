@@ -1,7 +1,21 @@
-import java.util.Scanner
+import java.util.Scanner;
 
-public class justnamerajeev(String[] args){
-public static void main(){
+public class justnamerajeev{
+     public static void main(String[] args){
+      Scanner sc=new Scanner(System.in);
+
+      System.out.println("enter decimal no");
+      int deciN=sc.nextInt(),binN=0,base=1;
+
+         while(deciN>0){
+            binN+=deciN%2*base;
+            base*=10;
+            deciN/=2;
+
+         }
+         System.out.println("conversion of given no into binary is  "+binN);
+         sc.close();
+
 
 }
 }
