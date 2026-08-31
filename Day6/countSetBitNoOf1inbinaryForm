@@ -1,0 +1,47 @@
+//count set  bits in a number
+//set bit is number of 1 in binary no 
+// count of set bits in a number means how many 1s in its binary representation
+
+import java.util.Scanner;
+
+public class justname{
+    public static void main(String[] args){
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter decinmal not binary no ");
+        int deciN=sc.nextInt(),count=0 , bitN=deciN;
+
+        while(deciN>0){
+            if(deciN%2==1){
+                count++;
+
+            }
+
+            deciN/=2;
+        }
+
+        System.out.println("the no of setbit is "+count);
+
+
+
+
+
+        //bitwise approach
+        count=0;
+        while(bitN>0){
+            if((bitN&1)==1){
+                count++;
+            }
+            bitN=bitN>>1;
+        }
+        System.out.println("no of bits "+count);
+
+
+
+
+
+
+      sc.close();
+
+    }
+}
