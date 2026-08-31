@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+public class rajeevitsjustNameofclass{
+    public static void main(String[] args){
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("enter binary number ");
+        //scan.ystemInt
+        int binN=sc.nextInt(),deciN=0,base=1;
+//base 1,2,4,8,16
+//10001 binary
+//decimal =binar ka digit raise to power  2  base 2ki 0, 2ki 1 2ki
+
+        while(binN>0){
+            deciN+= (binN%10)*base;
+            base*=2;
+            binN/=10;
+        }
+        System.out.println("bina to dec " + deciN);
+        sc.close();
+    }
+
+}
+
+
+
+
