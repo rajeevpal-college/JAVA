@@ -1,16 +1,24 @@
+import java.util.HashMap;
+
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-        //int j=nums.length-1;
-        for(int i=0;i<nums.length;i++){
-            for (int j=0;j<nums.length;j++){
-            if(nums[i]==nums[j]&&i-j<=k//((i-j<=k)&&(j-i>=k))){
-                return true;}
-                //j--;
-            
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+
+            if (map.containsKey(nums[i])) {
+
+                int prevIndex = map.get(nums[i]);
+
+                if (i - prevIndex <= k) {
+                    return true;
+                }
+            }
+
+            map.put(nums[i], i);
         }
-        }
+
         return false;
-        
-        
     }
 }
