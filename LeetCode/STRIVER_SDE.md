@@ -42,7 +42,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Intersection of Two Linked Lists
 - [x] [Linked List Cycle](./Java/Easy/141. Linked List Cycle/)
 - [ ] Reverse Nodes in k-Group
-- [x] [Palindrome Linked List](./Plaintext/Easy/234. Palindrome Linked List/)
+- [x] [Palindrome Linked List](./Java/Easy/234. Palindrome Linked List/)
 - [ ] LRU Cache
 - [ ] LFU Cache
 

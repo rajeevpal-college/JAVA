@@ -35,7 +35,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Insert Greatest Common Divisors in Linked List
 
 ### 📂 Module  1.4: Reordering, Palindrome & Pa
-- [x] [Palindrome Linked List](./Plaintext/Easy/234. Palindrome Linked List/)
+- [x] [Palindrome Linked List](./Java/Easy/234. Palindrome Linked List/)
 - [ ] Reorder List
 - [ ] Next Greater Node In Linked List
 - [ ] Double a Number Represented as a Linked List
