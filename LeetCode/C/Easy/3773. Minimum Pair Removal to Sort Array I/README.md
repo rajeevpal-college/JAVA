@@ -8,7 +8,7 @@
 Array, Hash Table, Linked List, Heap (Priority Queue), Simulation, Doubly-Linked List, Ordered Set
 
 ### 🚀 Performance
-- **Runtime:** 8 ms
+- **Runtime:** 0 ms
 - **Memory:** 9.8 MB
 
 ---
