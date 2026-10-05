@@ -3,14 +3,14 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 5 / 65 (7.7%)
+- **Completed:** 6 / 65 (9.2%)
 
 ---
 
 ## Checklist
 
 ### 📂 Module  1.1: Linked List Fundamentals &
-- [ ] Add Two Numbers
+- [x] [Add Two Numbers](./Java/Medium/2. Add Two Numbers/)
 - [ ] Merge Two Sorted Lists
 - [x] [Remove Linked List Elements](./Java/Easy/203. Remove Linked List Elements/)
 - [x] [Reverse Linked List](./Java/Easy/206. Reverse Linked List/)
